@@ -29,9 +29,11 @@
         <module name="org.apache.camel.core"/>
         <module name="org.fusesource.camel.sap" export="true" optional="true">
             <imports>
+                <include path="META-INF/services/org/apache/camel"/>
                 <include path="META-INF/services/org/apache/camel/component"/>
             </imports>
             <exports>
+                <include path="META-INF/services/org/apache/camel"/>
                 <include path="META-INF/services/org/apache/camel/component"/>
             </exports>
         </module>
